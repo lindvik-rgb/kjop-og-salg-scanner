@@ -4,7 +4,7 @@ nixPkgs = ["python311", "gcc", "glib", "nss", "nspr", "atk", "at-spi2-atk", "cup
 [phases.install]
 cmds = [
   "pip install -r requirements.txt",
-  "playwright install chromium"
+  "python -m playwright install chromium"
 ]
 
 [start]
